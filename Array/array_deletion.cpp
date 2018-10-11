@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 int main()
-{
+{	
 	int arr[50], size, i, del, count=0;
 	cout<<"Enter array size : ";
 	cin>>size;
@@ -12,6 +12,7 @@ int main()
 	}
 	cout<<"Enter element to be delete : ";
 	cin>>del;
+	// Main code for deleting an element 
 	for(i=0; i<size; i++)
 	{
 		if(arr[i]==del)
@@ -34,7 +35,7 @@ int main()
 		cout<<"Now the new array is :\n";
 		for(i=0; i<(size-1); i++)
 		{
-			cout<<arr[i]<<" ";
+			cout<<arr[i]<<endl;
 		}
 	}
 	return 0;
