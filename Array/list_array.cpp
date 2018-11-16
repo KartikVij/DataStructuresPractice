@@ -35,7 +35,7 @@ struct list
 		return -1;
 	}
 
-	int Search(int x)
+	int Search(int x) // it works for the value you want to search
 	{
 		int pos=-1;
 
@@ -60,7 +60,7 @@ struct list
 		return pos;
 	}
 	
-	void Sort()
+	void Sort() // sort the values acc to the array values
 	{
 		int i, j, pos;
 		for(i=0; i<top; i++)
@@ -82,9 +82,9 @@ struct list
 		isSorted=true;
 	}
 	
-	void insert(int x)
+	void insert(int x) //it helps to insert the values
 	{
-		if(!isSorted)
+		if(!isSorted) 
 		{
 
 			if(top==49)
@@ -126,7 +126,7 @@ struct list
 		}
 	}
 
-	void Remove(int x)
+	void Remove(int x) //it removes the values in the list of the arrays
 	{
 		int pos=Search(x);
 		cout<<"\n"<<data[pos]<<" deleted";
@@ -137,7 +137,7 @@ struct list
 		top--;
 	}
 
-	void Show()
+	void Show() //show all the results after the changes you made
 	{
 		for (int i = 0; i < top; i++)
 		{
